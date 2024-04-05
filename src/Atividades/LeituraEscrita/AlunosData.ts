@@ -1,6 +1,3 @@
-import whritefile from "fs/promises"
-
-
 const alunos = [
     {
         nome: "João Pedro",
@@ -16,4 +13,4 @@ const alunos = [
     },
 ]
 
-export {alunos}
+export { alunos }

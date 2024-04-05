@@ -1,18 +1,18 @@
-import {alunos} from "./AlunosData";
+import { alunos } from "./AlunosData";
 import { writeFile, readFile } from "node:fs/promises";
 
 export class Alunos {
     private dataSource = alunos
 
-    getDataSource(){
+    getDataSource() {
         return this.dataSource
     }
 
-    whriteAlunos(){
+    whriteAlunos() {
         writeFile("alunosDataSource.json", JSON.stringify(this.dataSource, null, 2))
     }
 
-    async readAlunosDataSource(){
+    async readAlunosDataSource() {
         const readAlunos = readFile("alunosDataSource.json", "utf-8")
 
         return readAlunos
